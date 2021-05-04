@@ -1,5 +1,5 @@
 {
-  "name": "graphql-code-generator-plugin-python-operations",
+  "name": "graphql-codegen-python-operations-plugin",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
