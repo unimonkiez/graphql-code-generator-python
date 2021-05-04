@@ -1,0 +1,33 @@
+{
+  "name": "graphql-code-generator-python",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf ./dist ./packages/plugins/*/dist",
+    "build": "tsc --project tsconfig.json",
+    "postbuild": "cp -TRv dist/plugins/python/src ./packages/plugins/python/dist && cp -TRv dist/plugins/python-operations/src ./packages/plugins/python-operations/dist",
+    "watch-build": "tsc-watch --project tsconfig.json --onSuccess \"npm run postbuild\"",
+    "types:check": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unimonkiez/graphql-code-generator-python.git"
+  },
+  "keywords": [
+    "graphql-code-generator",
+    "python"
+  ],
+  "author": "Yuval Saraf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unimonkiez/graphql-code-generator-python/issues"
+  },
+  "homepage": "https://github.com/unimonkiez/graphql-code-generator-python#readme",
+  "devDependencies": {
+    "tsc-watch": "^4.2.9",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  }
+}

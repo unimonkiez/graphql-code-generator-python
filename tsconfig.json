@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+      "incremental": false,
+      "baseUrl": ".",
+      "outDir": "dist",
+      "rootDir": "packages",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "importHelpers": true,
+      "experimentalDecorators": true,
+      "module": "esnext",
+      "target": "es2018",
+      "lib": ["es6", "esnext", "es2015", "dom"],
+      "suppressImplicitAnyIndexErrors": true,
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "sourceMap": true,
+      "declaration": true,
+      "noImplicitThis": true,
+      "alwaysStrict": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "noEmit": false,
+      "paths": {
+        "graphql-code-generator-plugin-python": ["packages/plugins/python/src/index.ts"],
+        "graphql-code-generator-plugin-python-operations": ["packages/plugins/python-operations/src/index.ts"],
+      }
+    },
+    "include": ["packages"],
+    "exclude": ["**/tests/test-files", "**/tests/test-documents", "**/dist", "**/temp"]
+  }
+  
